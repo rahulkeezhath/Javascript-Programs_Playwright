@@ -1,7 +1,7 @@
 function loginUser(Username, Password){
     return new Promise((resolve,reject)=>{
         console.log("User Logged in "+Username +" and Paswword:" +Password)
-        resolve("Rahul K")
+        resolve("Rahul")
     })
 }
 
@@ -25,7 +25,7 @@ function orderDetails(order){
         })
 }
 
-loginUser("Raj","Pass")
+loginUser("Rahul K","Pass")
 .then(user=>getOrder(user))
 .then(order=>orderDetails(order))
 .then(payment=>getPaymentStatus(payment))
